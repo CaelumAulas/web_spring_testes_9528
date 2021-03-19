@@ -1,0 +1,81 @@
+FJ-22 - Desenvolvimento na prática com Spring MVC e Testes
+
+leonardo.silva@caelum.com.br
+
+https://www.linkedin.com/in/leonardo-silva-dev/
+
+Jamboard, nosso quadro branco : https://jamboard.google.com/d/1ZZV53zR2ozxRIDxgZID3od197SAVGJJCVXJ02DYEAgA/edit?usp=sharing
+
+Portal do Aluno - https://aluno.caelum.com.br/
+
+Spring Framework - https://spring.io/projects
+Git GUI - https://git-scm.com/downloads/guis
+Repositório de Binário - https://www.sonatype.com/nexus/repository-pro
+Analisador de Código Qualidade e Segurança - https://www.sonarqube.org/
+Repositório de Binário - https://jfrog.com/open-source/#programs
+Joda Time - https://www.joda.org/joda-time/
+OMDB - http://www.omdbapi.com/
+Jackson JSON Parser - https://github.com/FasterXML/jackson
+Projetos Gitlab Caelum - https://gitlab.com/aovs/projetos-cursos
+Padroes de projeto - https://refactoring.guru/pt-br/design-patterns/catalog
+
+Pessoal, avaliem o treinamento pelo endereço: https://sistema.caelum.com.br/avaliacao/d1a662b
+
+Micronaut - https://docs.micronaut.io/latest/guide/index.html#security
+Helidon - https://helidon.io/#/
+Quarkus - https://quarkus.io/
+
+- Alura - Priscila Stuani
+
+https://www.youtube.com/watch?v=ujwHAKSNPso&list=PLh2Y_pKOa4Uc6DxNrBC5-ATs19YHDEIe_&index=5
+
+https://www.alura.com.br/artigos/guia-do-home-office?utm_campaign=alura_16032021_-_ex_alunos&utm_medium=email&utm_source=RD+Station
+
+https://www.youtube.com/watch?v=RezauPobPws&list=PLh2Y_pKOa4UfXouteLGc_qT-7HO80wy1Y&index=40
+
+Trocando a porta do Jetty
+via linha de comando: package jetty:run -Djetty.port=9999
+
+	     <plugin>
+               <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.0.v20161208</version>
+                <configuration>
+                	<httpConnector>
+                		<port>9999</port>
+                	</httpConnector>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                </configuration>
+            </plugin>
+
+Atividades:
+
+1.3 EXERCÍCIO - INICIANDO COM GIT - Pág 6
+1.5 EXERCÍCIO OPCIONAL - CRIANDO UMA CONTA NO GITHUB - Pág 13
+1.7 EXERCÍCIO - FORK E CLONE DO PROJETO - Pág 20 >> https://github.com/caelum/fj22-ingressos
+1.9 EXERCÍCIO - USANDO GERENCIADOR DE DEPENDÊNCIA E BUILD - Pág 25
+1.10 EXERCÍCIO - RODANDO PROJETO NO ECLIPSE COM MAVEN - Pág 26
+2.2 EXERCÍCIO - CRIANDO NOSSAS BRANCHES - Pág 35
+2.6 EXERCÍCIO - SALVANDO A SESSÃO NO SISTEMA - Pág 44
+2.9 EXERCÍCIO - GARANTINDO QUE A VALIDAÇÃO DE HORÁRIOS PARA CADASTRAR UMA SESSÃO ESTÁ CORRETA - Pág 51
+2.12 EXERCÍCIO - GARANTINDO QUE A VALIDAÇÃO DE HORÁRIOS PARA CADASTRAR UMA SESSÃO ESTÁ CORRETA - Pág 57
+3.2 EXERCÍCIO - COLOCANDO PREÇO NA SALA E FILME - Pág 62
+3.4 EXERCÍCIO - CRIANDO DESCONTOS E INGRESSO - Pág 68
+3.5 EXERCÍCIO - TESTANDO UM DESCONTO - Pág 69
+4.2 EXERCÍCIO - CRIANDO O CATÁLOGO DE FILMES E TELA DE DETALHES DO FILME COM SESSÕES PARA COMPRA - Pág 72
+4.4 EXERCÍCIO - CONSUMINDO SERVIÇO PARA DETALHES DO FILME - Pág 76
+5.2 EXERCÍCIO - CRIANDO LÓGICA PARA TELA DE SELEÇÃO DE LUGARES - Pág 81
+5.4 EXERCÍCIO - IMPLEMENTANDO A SELEÇÃO DE LUGARES, INGRESSOS E TIPO DE INGRESSOS. - Pág 84
+5.5 EXERCÍCIOS OPCIONAIS - TESTANDO A VERIFICAÇÃO DE LUGARES DISPONÍVEIS - Pág 88
+6.2 EXERCÍCIO - IMPLEMENTANDO A LÓGICA PARA A TELA DE COMPRAS - Pág 90
+6.4 EXERCÍCIO - DESABILITANDO A SELEÇÃO DO LUGAR QUE JÁ ESTÁ NO CARRINHO - Pág 93
+6.6 EXERCÍCIO - IMPLEMENTANDO A TELA DE CHECKOUT - Pág 94
+6.8 EXERCÍCIOS - IMPLEMENTANDO A COMPRA - Pág 97
+
+UPDATE Sala SET preco=10 WHERE preco is null;
+UPDATE Filme SET preco=10 WHERE preco is null;
+UPDATE Sessao SET preco=10 WHERE preco is null;
+
+class="assento ${sessao.isDisponivel(lugar) ? 'disponivel' : 'ocupado'}"
+onclick="${sessao.isDisponivel(lugar) ? 'changeCheckbox(this)' : '' }" 
+
